@@ -1,0 +1,127 @@
+---
+title: "Alternative Hover Text In Custom Function with  `plotly`"
+author: "Author: Kurtis Smith"
+date: "2025-02-06"
+slug: plotly-hover-var
+format:
+  html:
+    fig-width: 10
+    fig-height: 6
+categories: [self-tech-support, plotly, rlang, rstats]
+image: "image.png"
+summary: "How to add alternative text when hovering over a value using `plotly` for R."
+---
+
+## Problem
+
+How to add alternative text when hovering over a value using `plotly` for R.
+
+A few considerations I had to navigate:
+
+-   `plotly` behaves well when referencing columns already assigned in one of it's arguments, for this problem, the variable in question was in the assigned data but not assigned to any argument. In the example below, this would be the "alt_text" column
+
+-   The alternative text was to be passed into a custom function
+
+-   I found a workaround ([Thanks DJack from Stack Overflow](https://stackoverflow.com/posts/49902288/revisions)) which subsets data using \$ but I needed to be able to pass any column through a custom function
+
+Let's begin with creating test data.
+
+```{r setup, message = FALSE, warning = FALSE}
+# Load packages
+library(plotly)
+library(rlang)
+
+# Create data
+df <- data.frame(
+ x = 1,
+ y = 1,
+ text = "text",
+ alt_text = "alt_text"
+)
+```
+
+## Solution
+
+This **create_plot()** function demonstrates how referencing a column against an argument, allows easy access for the hovertemplate argument to be assigned one of those referenced columns. In this example - text.
+
+```{r create_plot}
+create_plot <- function(df, text){
+ 
+ text <- enquo(text)
+
+  plot_ly(
+  data = df, 
+  x = ~x, 
+  y = ~y, 
+  width = 300, 
+  height = 300,
+  type = "scatter",
+  mode = "text+marker",
+  text = text,
+  # not necessary but demonstrates code differences
+  hovertemplate = text,
+  textfont = list(size = 50, color = "#b44046"))}
+
+```
+
+This **create_plot_alt()** function demonstrates the difference in syntax. Inspired by Stack Overflows Djack but amended to suit a custom function, `rlang::quo_get_expr()` with \[\[\]\] allows for referencing additional columns.
+
+```{r create_plot_alt}
+
+create_plot_alt <- function(df, text, alt_text){
+ 
+ text <- enquo(text)
+ alt_text <- enquo(alt_text)
+ 
+ plot_ly(
+  data = df,
+  x = ~x, 
+  y = ~y, 
+  width = 300, 
+  height = 300,
+  type = "scatter",
+  mode = "text+marker",
+  text = text,
+  textfont = list(size = 50, color = "#57a2a4"),
+  hovertemplate = df[[rlang::quo_get_expr(alt_text)]] 
+  )
+ 
+}
+```
+
+**It works!**. The first plot with red text - on hover will show "text", whilst the second plot with blue text shows "alt_text"
+
+```{r visualise}
+# To remove elements not needed
+void <- list(
+  title = "",
+  zeroline = FALSE,
+  showline = FALSE,
+  showticklabels = FALSE
+)
+
+p1 <- create_plot(df = df, text = text) %>% 
+ layout(xaxis = void, yaxis = void)
+
+p_alt <- create_plot_alt(df = df, text = text, alt_text = alt_text) %>% 
+ layout(xaxis = void, yaxis = void)
+
+# same hover text as text plotted
+ style(p1, showlegend = FALSE)
+# alternative hover text
+ style(p_alt, showlegend = FALSE) 
+
+```
+
+# Conclusion
+
+Getting this to work took me too long to admit and later became more complicated by passing a SharedData R6 class object for use with the `crosstalk` package. I'll leave that battle for another day. Taking wins where I can, I'll bank this fix and look to explore `rlang` in more detail in the future.
+
+## Acknowledgements
+
+[r-bloggers.com](r-bloggers.com) for the reach, platform, and content
+
+Packages and package maintainer(s):
+
+-   plotly \| Carson Sievert
+-   rlang \| Lionel Henry
