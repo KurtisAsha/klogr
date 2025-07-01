@@ -6,7 +6,7 @@ listing:
   type: default
   categories: true
   feed:
-     categories: [rstats, posts]
+     categories: [plotly, posts]
   sort-ui: false
   filter-ui: false
 page-layout: full
