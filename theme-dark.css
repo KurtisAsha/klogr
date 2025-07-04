@@ -1,0 +1,26 @@
+/*-- scss:defaults --*/
+
+
+/*-- scss:rules --*/
+
+.navbar {
+    padding: 10px;
+    background-color: #060606;
+}
+
+.page-columns.page-full {
+    padding: 10px 0px;
+    background-color: #060606;
+}
+
+.quarto-title-banner {
+    /* margin-bottom: 1em; */
+}
+
+div.quarto-post .thumbnail img {
+    width: 40%;
+}
+
+img, svg {
+    border-radius: 100px;
+}

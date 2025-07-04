@@ -8,7 +8,7 @@ format:
     fig-width: 10
     fig-height: 6
 categories: [fun, flexdashboard, rstats]
-image: image.jpeg
+image: image.png
 summary: "A bit of festive fun: flexdashboard from Fortnum & Mason's advert calendar ratings"
 ---
 

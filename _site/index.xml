@@ -5,7 +5,7 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>klogr</title>
+<title>klogr::blog(posts)</title>
 <link>https://klogr.netlify.app/</link>
 <atom:link href="https://klogr.netlify.app/index.xml" rel="self" type="application/rss+xml"/>
 <description>This is Kurtis’ blog, klog for short. It serves to document my personal R related projects and to detail general data science issues I’ve journeyed the internet for and don’t want to forget. In short, I’m using this site to unKlog my headspace 🙆🏽‍♂️. Inspired by new technology / analysis and the exploration of its value 👾.</description>
@@ -764,7 +764,7 @@ font-style: inherit;">FALSE</span>) </span></code></pre></div>
   <category>rstats</category>
   <guid>https://klogr.netlify.app/posts/2025-01-28-advent-dash/</guid>
   <pubDate>Tue, 28 Jan 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://klogr.netlify.app/posts/2025-01-28-advent-dash/image.jpeg" medium="image" type="image/jpeg"/>
+  <media:content url="https://klogr.netlify.app/posts/2025-01-28-advent-dash/image.png" medium="image" type="image/png"/>
 </item>
 <item>
   <title>Rolling 5-year Sum Label Using slider</title>
@@ -1346,11 +1346,11 @@ font-style: inherit;">"plot"</span></span>
   <category>rstats</category>
   <guid>https://klogr.netlify.app/posts/2024-10-22-slider_rolling_label/</guid>
   <pubDate>Mon, 21 Oct 2024 23:00:00 GMT</pubDate>
-  <media:content url="https://klogr.netlify.app/posts/2024-10-22-slider_rolling_label/image.png" medium="image" type="image/png" height="94" width="144"/>
+  <media:content url="https://klogr.netlify.app/posts/2024-10-22-slider_rolling_label/image.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>NBA Final 2024 Process Mining</title>
-  <dc:creator>Kurtis Smith</dc:creator>
+  <dc:creator>Author: Kurtis Smith</dc:creator>
   <link>https://klogr.netlify.app/posts/2024-09-11-nba-final-flow/</link>
   <description><![CDATA[ 
 
@@ -3262,7 +3262,7 @@ Kröckel, Pavlina, and Freimut Bodendorf. 2020. <span>“Process Mining of Footb
   <category>rstats</category>
   <guid>https://klogr.netlify.app/posts/2024-09-11-nba-final-flow/</guid>
   <pubDate>Tue, 10 Sep 2024 23:00:00 GMT</pubDate>
-  <media:content url="https://klogr.netlify.app/posts/2024-09-11-nba-final-flow/image.png" medium="image" type="image/png" height="94" width="144"/>
+  <media:content url="https://klogr.netlify.app/posts/2024-09-11-nba-final-flow/image.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 </channel>
 </rss>

@@ -1,6 +1,6 @@
 ---
 title: "NBA Final 2024 Process Mining"
-author: "Kurtis Smith"
+author: "Author: Kurtis Smith"
 date: "2024-09-11"
 slug: nba-final-2024-pm
 bibliography: references.bib
