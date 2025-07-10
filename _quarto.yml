@@ -6,6 +6,7 @@ website:
   favicon: my_8bit_mush_circle.ico
   site-url: https://klogr.netlify.app/
   description: This is Kurtis’ blog, klog for short. It serves to document my personal R related projects and to detail general data science issues I’ve journeyed the internet for and don’t want to forget. In short, I’m using this site to unKlog my headspace 🙆🏽‍♂️. Inspired by new technology / analysis and the exploration of its value 👾.
+  page-navigation: true
   cookie-consent:
     type: express
     style: headline
@@ -27,6 +28,10 @@ website:
         href: index.xml
 format:
   html:
+    link-external-icon: true
+    link-external-newwindow: true
+    smooth-scroll: true
+    toc: true
     theme:
      light: [litera, theme-light.css]
      dark: [cyborg, theme-dark.css]
