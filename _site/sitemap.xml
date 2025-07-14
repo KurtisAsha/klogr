@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://klogr.netlify.app/index.html</loc>
-    <lastmod>2025-07-14T17:03:59.983Z</lastmod>
+    <lastmod>2025-07-14T17:27:48.948Z</lastmod>
   </url>
   <url>
     <loc>https://klogr.netlify.app/posts/2025-01-28-advent-dash/index.html</loc>
@@ -19,5 +19,9 @@
   <url>
     <loc>https://klogr.netlify.app/posts/2024-09-11-nba-final-flow/index.html</loc>
     <lastmod>2025-07-04T17:21:11.015Z</lastmod>
+  </url>
+  <url>
+    <loc>https://klogr.netlify.app/posts/2024-10-22-slider_rolling_label/index.html</loc>
+    <lastmod>2025-07-01T13:44:09.358Z</lastmod>
   </url>
 </urlset>
