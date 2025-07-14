@@ -5,7 +5,7 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>klogr::blog(posts)</title>
+<title>klogr</title>
 <link>https://klogr.netlify.app/#category=rstats</link>
 <atom:link href="https://klogr.netlify.app/index-rstats.xml" rel="self" type="application/rss+xml"/>
 <description>This is Kurtis’ blog, klog for short. It serves to document my personal R related projects and to detail general data science issues I’ve journeyed the internet for and don’t want to forget. In short, I’m using this site to unKlog my headspace 🙆🏽‍♂️. Inspired by new technology / analysis and the exploration of its value 👾.</description>
