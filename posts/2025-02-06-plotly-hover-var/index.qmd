@@ -7,7 +7,7 @@ format:
   html:
     fig-width: 10
     fig-height: 6
-categories: [self-tech-support, plotly, rlang, rstats]
+categories: [self-tech-support, plotly, rstats]
 image: "image.png"
 summary: "How to add alternative text when hovering over a value using `plotly` for R."
 ---

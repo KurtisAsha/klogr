@@ -83,9 +83,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -216,13 +216,13 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
+    <div class="quarto-title column-page-left">
       <h1 class="title">Posts</h1>
                       </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page">
+  <div class="quarto-title-meta column-page-left">
 
       
     
@@ -233,11 +233,11 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="bupaverse">bupaverse <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dbplyr">dbplyr <span class="quarto-category-count">(1)</span></div><div class="category" data-category="flexdashboard">flexdashboard <span class="quarto-category-count">(1)</span></div><div class="category" data-category="fun">fun <span class="quarto-category-count">(2)</span></div><div class="category" data-category="plotly">plotly <span class="quarto-category-count">(1)</span></div><div class="category" data-category="rstats">rstats <span class="quarto-category-count">(6)</span></div><div class="category" data-category="self-tech-support">self-tech-support <span class="quarto-category-count">(3)</span></div><div class="category" data-category="shiny-assistant">shiny-assistant <span class="quarto-category-count">(1)</span></div><div class="category" data-category="slider">slider <span class="quarto-category-count">(1)</span></div><div class="category" data-category="sports-analytics">sports-analytics <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
@@ -259,6 +259,17 @@ window.Quarto = {
 <h5 class="no-anchor card-title listing-title">
 Shiny Assisted Solar Ages
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('fun'); return false;">
+fun
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('shiny-assistant'); return false;">
+shiny-assistant
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('rstats'); return false;">
+rstats
+</div>
+</div>
 <div class="card-text listing-description">
 Inspired by my son’s love for everything solar system and my wanting to play with Shiny Assistant. I’ve built an app that takes your date of birth and displays your age for…
 </div>
@@ -284,6 +295,17 @@ May 27, 2025
 <h5 class="no-anchor card-title listing-title">
 Character to Date conversion using <code>lazy</code> queries
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('self-tech-support'); return false;">
+self-tech-support
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('dbplyr'); return false;">
+dbplyr
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('rstats'); return false;">
+rstats
+</div>
+</div>
 <div class="card-text listing-description">
 How to convert a string with format DDMMYYYY, to a date type using <strong>lazy queries</strong>. The problem is that base r function <code>as.Date()</code> does not have a translatable SQL equivalent.…
 </div>
@@ -299,7 +321,7 @@ Apr 25, 2025
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="self-tech-support,plotly,rlang,rstats" data-listing-date-sort="1738800000000" data-listing-file-modified-sort="1751377593646" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="501">
+<div class="g-col-1" data-index="2" data-categories="self-tech-support,plotly,rstats" data-listing-date-sort="1738800000000" data-listing-file-modified-sort="1752565593680" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="501">
 <a href="./posts/2025-02-06-plotly-hover-var/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -309,6 +331,17 @@ Apr 25, 2025
 <h5 class="no-anchor card-title listing-title">
 Alternative Hover Text In Custom Function with <code>plotly</code>
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('self-tech-support'); return false;">
+self-tech-support
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('plotly'); return false;">
+plotly
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('rstats'); return false;">
+rstats
+</div>
+</div>
 <div class="card-text listing-description">
 How to add alternative text when hovering over a value using <code>plotly</code> for R.
 </div>
@@ -334,6 +367,17 @@ Feb 6, 2025
 <h5 class="no-anchor card-title listing-title">
 Advent Calendar Ratings Dashboard
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('fun'); return false;">
+fun
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('flexdashboard'); return false;">
+flexdashboard
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('rstats'); return false;">
+rstats
+</div>
+</div>
 <div class="card-text listing-description">
 For a bit of festive fun 🎄, I built a flexdashboard from Fortnum &amp; Mason’s advert calendar ratings. Participants included:
 </div>
@@ -349,7 +393,7 @@ Jan 28, 2025
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="self-tech-support,slider,rstats" data-listing-date-sort="1729551600000" data-listing-file-modified-sort="1751377449358" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="814">
+<div class="g-col-1" data-index="4" data-categories="self-tech-support,slider,rstats" data-listing-date-sort="1729551600000" data-listing-file-modified-sort="1752565442668" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="814">
 <a href="./posts/2024-10-22-slider_rolling_label/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -359,6 +403,17 @@ Jan 28, 2025
 <h5 class="no-anchor card-title listing-title">
 Rolling 5-year Sum Label Using <code>slider</code>
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('self-tech-support'); return false;">
+self-tech-support
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('slider'); return false;">
+slider
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('rstats'); return false;">
+rstats
+</div>
+</div>
 <div class="card-text listing-description">
 First blog post off the back of an issue at work which required desktop research to figure out. This content aims to better cement my learning and to share to anyone who has…
 </div>
@@ -374,7 +429,7 @@ Oct 22, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="bupaverse,sports-analytics,rstats" data-listing-date-sort="1726009200000" data-listing-file-modified-sort="1751649671015" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16" data-listing-word-count-sort="3080">
+<div class="g-col-1" data-index="5" data-categories="bupaverse,sports-analytics,rstats" data-listing-date-sort="1726009200000" data-listing-file-modified-sort="1752565428982" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16" data-listing-word-count-sort="3080">
 <a href="./posts/2024-09-11-nba-final-flow/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -384,6 +439,17 @@ Oct 22, 2024
 <h5 class="no-anchor card-title listing-title">
 NBA Final 2024 Process Mining
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('bupaverse'); return false;">
+bupaverse
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('sports-analytics'); return false;">
+sports-analytics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('rstats'); return false;">
+rstats
+</div>
+</div>
 <div class="card-text listing-description">
 The NBA final has concluded and I would like to play with process mining packages in bupaverse, let’s marry them.
 </div>

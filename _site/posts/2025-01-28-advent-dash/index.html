@@ -100,6 +100,7 @@ cookieconsent.run({
 });
 </script> 
   
+<style>html{ scroll-behavior: smooth; }</style>
 <script src="../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
 
 <link href="../../site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
@@ -122,7 +123,7 @@ cookieconsent.run({
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -138,11 +139,17 @@ cookieconsent.run({
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Posts</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/KurtisAsha"> <i class="bi bi-github" role="img">
 </i> 
@@ -155,11 +162,6 @@ cookieconsent.run({
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://www.linkedin.com/in/kurtisashasmith/"> <i class="bi bi-linkedin" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -208,7 +210,19 @@ cookieconsent.run({
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#project-introduction" id="toc-project-introduction" class="nav-link active" data-scroll-target="#project-introduction">Project Introduction</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li><a href="#dashboard" id="toc-dashboard" class="nav-link" data-scroll-target="#dashboard">Dashboard</a></li>
+  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -233,8 +247,8 @@ cookieconsent.run({
 <p>An idea of the data</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-20fc7d5eaf510155330a" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-20fc7d5eaf510155330a">{"x":{"filter":"none","vertical":false,"data":[[1,1,1,1],["Royal Blend","Royal Blend","Royal Blend","Royal Blend"],["Chocolossus","Chocolossus","Chocolossus","Chocolossus"],["Sofia","Kurtis","Skye","Laura"],[10,9,10,9],[4,8,6,9.5],[1,2,7,7]],"container":"<table class=\"compact hover row-border\">\n  <thead>\n    <tr>\n      <th>day<\/th>\n      <th>tea_name<\/th>\n      <th>biscuit_name<\/th>\n      <th>reviewer<\/th>\n      <th>tea_score_out_of_10<\/th>\n      <th>biscuit_score_out_of_10<\/th>\n      <th>combination_score_out_of_10<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","columnDefs":[{"className":"dt-right","targets":[0,4,5,6]},{"name":"day","targets":0},{"name":"tea_name","targets":1},{"name":"biscuit_name","targets":2},{"name":"reviewer","targets":3},{"name":"tea_score_out_of_10","targets":4},{"name":"biscuit_score_out_of_10","targets":5},{"name":"combination_score_out_of_10","targets":6}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-2c8a77e84f9681f60235" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-2c8a77e84f9681f60235">{"x":{"filter":"none","vertical":false,"data":[[1,1,1,1],["Royal Blend","Royal Blend","Royal Blend","Royal Blend"],["Chocolossus","Chocolossus","Chocolossus","Chocolossus"],["Sofia","Kurtis","Skye","Laura"],[10,9,10,9],[4,8,6,9.5],[1,2,7,7]],"container":"<table class=\"compact hover row-border\">\n  <thead>\n    <tr>\n      <th>day<\/th>\n      <th>tea_name<\/th>\n      <th>biscuit_name<\/th>\n      <th>reviewer<\/th>\n      <th>tea_score_out_of_10<\/th>\n      <th>biscuit_score_out_of_10<\/th>\n      <th>combination_score_out_of_10<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","columnDefs":[{"className":"dt-right","targets":[0,4,5,6]},{"name":"day","targets":0},{"name":"tea_name","targets":1},{"name":"biscuit_name","targets":2},{"name":"reviewer","targets":3},{"name":"tea_score_out_of_10","targets":4},{"name":"biscuit_score_out_of_10","targets":5},{"name":"combination_score_out_of_10","targets":6}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -526,6 +540,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -858,4 +879,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

@@ -5,13 +5,10 @@ about:
   template: trestles
   links:
     - icon: github
-      text: Github
       href: https://github.com/KurtisAsha
-    - icon: kaggle
-      text: Kaggle
+    - text: K
       href: https://www.kaggle.com/kurtissmith
     - icon: linkedin
-      text: LinkedIn
       href: https://www.linkedin.com/in/kurtisashasmith/
 ---
 
